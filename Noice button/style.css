@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+}
+
+.btn{
+  position: absolute;
+  top: 45.5vh;
+  left: 42vw;
+  width: 16vw;
+  height: 9vh;
+  border-radius: 100%;
+  border: white solid 2px;
+  background: transparent;
+  transition: 1s;
+}
+
+.svg{
+  width: 7vw;
+  height: 4.5vh;
+  color: white;
+  transition: .5s;
+}
+
+.up{
+  color: greenyellow;
+  transform: translateY(-10%) rotate(-20deg);
+}
+
+.active-1 {
+  border-top: greenyellow solid;
+}
+
+.active-2 {
+  border-right: greenyellow solid;
+}
+
+.active-3 {
+  border-bottom: greenyellow solid;
+}
+
+.active-4 {
+  border-left: greenyellow solid;
+}

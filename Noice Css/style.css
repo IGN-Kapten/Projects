@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.card {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+.big-card {
+  width: 150px;
+  height: 275px;
+  position: absolute;
+  border-radius: 7px;
+  transition: 1s;
+}
+
+.small-card {
+  width: 60px;
+  height: 90px;
+  position: absolute;
+  border-radius: 7px;
+  transition: 1s;
+  transform: translate(100%, 100%)
+}
+
+.big-card:nth-child(2) {
+  transform: translateX(-10%) rotate(-3deg);
+  background-color: #e09d67;
+  background-image: url('https://images.unsplash.com/photo-1667137092038-27612b7233d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60');
+  background-size: cover;
+  z-index: 1;
+  box-shadow: 5px -2px 25px #e09d67;
+}
+
+.big-card:nth-child(4) {
+  transform: translateX(-5%) rotate(-2deg);
+  background-color: #2b0098;
+  background-image: url('https://images.unsplash.com/photo-1667202374066-03b435d61db0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60');
+  background-size: cover;
+  z-index: 3;
+  box-shadow: 5px -2px 25px #2b0098;
+}
+
+.big-card:nth-child(6) {
+  transform: translateX(0%) rotate(1deg);
+  background-color: #8d1f48;
+  background-image: url('https://images.unsplash.com/photo-1667167897320-fb0c9e96fa59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60');
+  background-size: cover;
+  z-index: 5;
+  box-shadow: 5px 2px 25px #8d1f48;
+}
+
+.big-card:nth-child(8) {
+  transform: translateX(5%) rotate(3deg);
+  background-color: #7990a0;
+  background-image: url('https://images.unsplash.com/photo-1667143297634-31c6c5f70381?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60');
+  background-size: cover;
+  z-index: 8;
+  box-shadow: 5px 2px 25px #7990a0;
+}
+
+.card:hover>.big-card:nth-child(2) {
+  transform: translateX(-50%) rotate(-10deg);
+  box-shadow: 3px -7px 25px #e09d67;
+}
+
+.card:hover>.big-card:nth-child(4) {
+  transform: translateX(-25%) rotate(-5deg);
+  box-shadow: 1px -5px 25px #2b0098;
+}
+
+.card:hover>.big-card:nth-child(6) {
+  transform: translate(25%, 2%) rotate(5deg);
+  box-shadow: 1px 7px 25px #8d1f48;
+}
+
+.card:hover>.big-card:nth-child(8) {
+  transform: translate(50%, 5%) rotate(9deg);
+}
+
+.small-card:nth-child(1){
+  background-color: #738093;
+  background-image: url('https://wallpapercave.com/wp/wp3959165.jpg');
+  background-size: cover;
+  z-index: 2;
+}
+
+.small-card:nth-child(3) {
+  background-color: #67a203;
+  z-index: 4;
+  background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg');
+  background-size: cover;
+}
+
+.small-card:nth-child(5) {
+  background-color: #42d8f2;
+  background-image: url('https://wallpapercave.com/mwp/wp7048889.jpg');
+  background-size: cover;
+  z-index: 6;
+}
+
+.small-card:nth-child(7) {
+  background-color: #432e9f;
+  background-image: url('https://wallpapercave.com/uwp/uwp2438976.jpeg');
+  background-size: cover;
+  z-index: 7;
+}
+
+.card:hover>.small-card:nth-child(1) {
+  transform: translate(-90%, -80%) rotate(15deg);
+  box-shadow: -5px -5px 25px #738093;
+}
+
+.card:hover>.small-card:nth-child(3) {
+  transform: translate(-50%, 250%) rotate(-30deg);
+  box-shadow: -5px 5px 25px #67a203;
+}
+
+.card:hover>.small-card:nth-child(5) {
+  transform: translate(230%, -60%) rotate(-25deg);
+  box-shadow: 2px -2px 25px #42d8f2;
+}
+
+.card:hover>.small-card:nth-child(7) {
+  transform: translate(275%, 290%) rotate(30deg);
+  box-shadow: 5px 5px 30px 5px #432e9f;
+}
